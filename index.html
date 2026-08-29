@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vantage — The Peak of Quality</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <aside>
+      <div class="brand-mini">
+        <img src="assets/images/vantage-logo2.png" alt="Vantage logo" />
+        <div class="txt">
+          <div class="name">VANTAGE</div>
+          <div class="sub">THE PEAK OF QUALITY</div>
+        </div>
+        <button class="collapse" id="collapseBtn" title="Dock / collapse sidebar" aria-label="Dock or collapse sidebar">◀</button>
+      </div>
+      
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="search" type="search" placeholder="Search keywords..." autocomplete="off" />
+      </div>
+      <div class="count" id="count"></div>
+      <div class="scenario-list" id="scenarioList"></div>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="hero-art"><img src="assets/images/vantage-logo2.png" alt="Vantage — The Peak of Quality" /></div>
+        <div class="hero-copy">
+          <div class="eyebrow">Internal Scenario Search</div>
+          <h1>VANTAGE</h1>
+          <p class="tagline">The Peak of Quality</p>
+          <p class="hint">Search by any in-string keyword or choose a scenario from the dockable sidebar. The selected result stays fully visible on one screen—no page scrolling.</p>
+        </div>
+      </section>
+
+      <section class="cards" aria-live="polite">
+        <article class="card scenario">
+          <div class="card-head"><div class="card-label">Scenario</div><span class="badge" id="scenarioId">S-001</span></div>
+          <h2 id="scenarioTitle"></h2>
+          <p id="scenarioSummary"></p>
+          <div class="keywords" id="keywords"></div>
+        </article>
+
+        <article class="card description">
+          <div class="card-head"><div class="card-label">Description</div></div>
+          <h2>What is happening?</h2>
+          <p id="description"></p>
+          <div class="meta">Use this card to identify the situation and confirm the matching conditions.</div>
+        </article>
+
+        <article class="card solution">
+          <div class="card-head"><div class="card-label">Solution</div><span class="badge">Recommended</span></div>
+          <h2>Resolution</h2>
+          <p class="solution-body" id="solution"></p>
+          <div class="meta">This is Chrispy's suggested course of action.</div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
